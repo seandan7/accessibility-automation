@@ -18,7 +18,6 @@ async function addAltTags() {
       ).then((data) => {
         return data.json()
       }).then((json) => {
-        console.log(json)
         const addedAltTag = `No alt tag found. There is a ${Math.floor(json['result']['tags'][0].confidence)} percent chance image contains ${json['result']['tags'][0].tag.en}`
         images[i].setAttribute('alt', addedAltTag)
       })
