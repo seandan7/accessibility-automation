@@ -21,6 +21,8 @@ Lastly, this repo has code to add aria-labels to buttons that read 'learn more' 
 ### NOTE:
 These scripts are obviously not ideal, as some SR's dont load JS scripts. This is meant as a temporary fix while remediation is being done. It is preferable to first enable accessibility within server side loops and manually where needed. 
 
+There are some edge cases, such as popups, I have not yet covered. 
+
 There will likely be issues I missed or that are specific to your site. If they are broad, or if my code could be improved, feel free to make a PR.
 
 Let's build a more accessibile web so everyone can enjoy the entertainment, information, and connections that we may take for granted. 
