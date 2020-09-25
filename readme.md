@@ -18,7 +18,8 @@ This repo has scripts to make the HTML tags for bold and italicizing purely CSS 
 
 Lastly, this repo has code to add aria-labels to buttons that read 'learn more' or 'read more' (aria-labels.js). These links are too broad for Screen Readers to understand where they go.
 
-NOTE: These scripts are obviously not ideal, as some SR's dont load JS scripts. This is meant as a temporary fix while remediation is being done. It is preferable to first enable accessibility within server side loops and manually where needed. 
+### NOTE:
+These scripts are obviously not ideal, as some SR's dont load JS scripts. This is meant as a temporary fix while remediation is being done. It is preferable to first enable accessibility within server side loops and manually where needed. 
 
 There will likely be issues I missed or that are specific to your site. If they are broad, or if my code could be improved, feel free to make a PR.
 
