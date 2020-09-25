@@ -1,4 +1,6 @@
-const buttons = document.getElementsByTagName("a");
+const buttonLinks = Array.prototype.slice.call(document.getElementsByTagName("button"), 0);
+const anchorLinks = Array.prototype.slice.call(document.getElementsByTagName("a"), 0);
+const buttons = buttonLinks.concat(anchorLinks)
 
 function addAriaLabels() {
   for (let i = 0; i < buttons.length; i++) {
