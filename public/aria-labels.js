@@ -5,6 +5,7 @@ const buttons = buttonLinks.concat(anchorLinks)
 function addAriaLabels() {
   for (let i = 0; i < buttons.length; i++) {
     if (
+      !buttons[i].getAttribute('aria-label') &&
       buttons[i].textContent.toLowerCase() === "read more" ||
       buttons[i].textContent.toLowerCase() === "learn more"
     ) {
