@@ -16,7 +16,7 @@ function addAriaLabels() {
       buttons[i].textContent.toLowerCase() === "learn more"
     ) {
       if (buttons[i].getAttribute("href")[0] == "#") {
-        buttons[i].setAttribute("aria-label", "Anchor link within page");
+        buttons[i].setAttribute("aria-label", "Anchor link within page, or a link to popup");
       } else {
         const buttonLink = buttons[i].getAttribute("href");
         let buttonAriaLabel;
