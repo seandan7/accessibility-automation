@@ -16,7 +16,7 @@ These repo uses https://imagga.com/ for image recognition (alt-tags.js). This re
 
 This repo has scripts to make the HTML tags for bold and italicizing purely CSS (font-styles.js). This is recommended by most accessibility checkers, as these tags can clutter if used purely for decoration.
 
-Lastly, this repo has code to add aria-labels to buttons that read 'learn more' or 'read more'. These links are too broad for Screen Readers to understand where they go.
+Lastly, this repo has code to add aria-labels to buttons that read 'learn more' or 'read more' (aria-labels.js). These links are too broad for Screen Readers to understand where they go.
 
 NOTE: These scripts are obviously not ideal, as some SR's dont load JS scripts. This is meant as a temporary fix while remediation is being done. It is preferable to first enable accessibility within server side loops and manually where needed. 
 
