@@ -1,7 +1,10 @@
 function tagsToSpans(tag, spanStyle) {
   const tagArray = document.getElementsByTagName(tag)
   for (let i = 0; i < tagArray.length; i++) {
-    console.log(tagArray[i])
+    const spanToReplace = document.createElement('span')
+    spanToReplace.innerHTML = tagArray[i].textContent;
+    spanToReplace.setAttribute('style', spanStyle)
+    tagArray[i].parentNode.replaceChild(spanToReplace, tagArray[i])
   }
 }
 tagsToSpans('u', 'text-decoration: underline;')
