@@ -11,7 +11,7 @@ async function addAltTags() {
         "https://api.imagga.com/v2/tags?image_url=" +
           encodeURIComponent(imageUrl), {
             headers: new Headers({
-              'Authorization': process.env.auth, 
+              'Authorization': config.auth, 
               'Content-Type': 'application/x-www-form-urlencoded'
             }),
           }
