@@ -1,4 +1,7 @@
 <html>
+  <head>
+   <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
     <h1>Seans Amazing Website</h1>
     <div class="links">
@@ -6,7 +9,12 @@
       <p>Learn More: <a href="about.html">Learn More</a></p>
       <p>Informative: <a href="#">Go to Blog</a></p>
       <p>Read More: <a href="blog.html">Read More</a></p>
-      <p>Read More w/ Aria-label aready: <a aria-label="This one already has an aria label" href="#">Read More</a></p>
+      <p>
+        Read More w/ Aria-label aready:
+        <a aria-label="This one already has an aria label" href="#"
+          >Read More</a
+        >
+      </p>
       <p>Anchor Link (No solution): <a href="#images">Read More</a></p>
       <p>Button: <button href="https://www.cnn.com/">Read More</button></p>
     </div>
@@ -18,26 +26,24 @@
     </div>
     <div class="images" id="images">
       <h2>Image Alt Tags</h2>
-    <img
-      src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU5MDUzMTE0Mzk2MTI0OTUy/abraham-lincoln-1809---18652c-sixteenth-president-of-the-united-states-of-america-photo-by-stock-montagestock-montagegetty-images_promo.jpg"
-    />
-    <img alt="This has an alt" src="//via.placeholder.com/350x150" />
-    <img
-      src="https://images.pexels.com/photos/2702674/pexels-photo-2702674.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-    />
-  </div>
+      <img
+        src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU5MDUzMTE0Mzk2MTI0OTUy/abraham-lincoln-1809---18652c-sixteenth-president-of-the-united-states-of-america-photo-by-stock-montagestock-montagegetty-images_promo.jpg"
+      />
+      <img alt="This has an alt" src="//via.placeholder.com/350x150" />
+      <img
+        src="https://images.pexels.com/photos/2702674/pexels-photo-2702674.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+      />
+    </div>
+    <div class="colors" id="colors">
+      <h2>Color Contrast</h2>
+      <div id="example">
+        <h1>Black</h1>
+      </div>
+    </div>
     <script src="config.js"></script>
-    <script src="aria-labels.js"></script>
+    <!-- <script src="aria-labels.js"></script>
     <script src="alt-tags.js"></script>
-    <script src="font-styles.js"></script>
+    <script src="font-styles.js"></script> -->
+    <script src="color-contrast.js"></script>
   </body>
-  <style>
-    .images {
-      width: 100%;
-    }
-    .images img {
-        display: block;
-        max-width: 300px;
-    }
-  </style>
 </html>
