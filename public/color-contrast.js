@@ -3,8 +3,8 @@ var themeColors = [
   "rgb(255,255,0)",
   "rbg(0,0,255)",
   "rgb(0,0,0)",
-  "rgb(0,255,0",
-  "rgb(100,100,100",
+  "rgb(0,255,0)",
+  "rgb(100,100,100)",
 ];
 var timesRan = 0;
 function changeColorIfNeccessary(elementId) {
@@ -13,8 +13,7 @@ function changeColorIfNeccessary(elementId) {
     return;
   } else {
     const element = document.getElementById(elementId);
-    const themeColorIndex = themeColors.indexOf(element.style.backgroundColor);
-    console.log(themeColorIndex); // -1
+    const themeColorIndex = themeColors.indexOf(window.getComputedStyle(element).backgroundColor.replace(/\s/g, ''));
     // read the colors and transform them into rgb format
     const color1 = window.getComputedStyle(element).backgroundColor; // will work
     const color2 = window.getComputedStyle(element).color;
@@ -37,7 +36,7 @@ function changeColorIfNeccessary(elementId) {
       color1luminance > color2luminance
         ? (color2luminance + 0.05) / (color1luminance + 0.05)
         : (color1luminance + 0.05) / (color2luminance + 0.05);
-
+    console.log(ratio)
     if (ratio < 0.222222) {
       console.log("is good");
     } else {
