@@ -14,6 +14,7 @@ function changeColorIfNeccessary(elementId) {
   } else {
     const element = document.getElementById(elementId);
     const themeColorIndex = themeColors.indexOf(window.getComputedStyle(element).backgroundColor.replace(/\s/g, ''));
+    console.log(themeColorIndex)
     // read the colors and transform them into rgb format
     const color1 = window.getComputedStyle(element).backgroundColor; // will work
     const color2 = window.getComputedStyle(element).color;
