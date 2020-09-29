@@ -6,19 +6,19 @@ var themeColors = [
   "rgb(0,255,0)",
   "rgb(100,100,100)",
 ];
-var timesRan = 0;
+let timesRan = 0;
+let themeColorIndex = -1;
 function changeColorIfNeccessary(elementId) {
   timesRan++;
   if (timesRan > themeColors.length) {
     return;
   } else {
     const element = document.getElementById(elementId);
-    const themeColorIndex = themeColors.indexOf(window.getComputedStyle(element).backgroundColor.replace(/\s/g, ''));
-    console.log(themeColorIndex)
+    themeColorIndex++
     // read the colors and transform them into rgb format
     const color1 = window.getComputedStyle(element).backgroundColor; // will work
     const color2 = window.getComputedStyle(element).color;
-
+    console.log(window.getComputedStyle(element).backgroundColor)
     const color1rgb = color1.replace(/[^\d,]/g, "").split(",");
     const color2rgb = color2.replace(/[^\d,]/g, "").split(",");
 
