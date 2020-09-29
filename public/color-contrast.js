@@ -7,14 +7,14 @@ var themeColors = [
   "rgb(100,100,100)",
 ];
 let timesRan = 0;
-let themeColorIndex = -1;
 function changeColorIfNeccessary(elementId) {
   timesRan++;
   if (timesRan > themeColors.length) {
     return;
   } else {
     const element = document.getElementById(elementId);
-    themeColorIndex++
+    let themeColorIndex = themeColors.indexOf(window.getComputedStyle(element).backgroundColor.replace(/\s/g, ''));
+    console.log(themeColorIndex)
     // read the colors and transform them into rgb format
     const color1 = window.getComputedStyle(element).backgroundColor; // will work
     const color2 = window.getComputedStyle(element).color;
@@ -41,7 +41,8 @@ function changeColorIfNeccessary(elementId) {
     if (ratio < 0.222222) {
       console.log("is good");
     } else {
-      element.style.backgroundColor = themeColors[themeColorIndex + 1];
+      themeColorIndex++
+      element.style.backgroundColor = themeColors[themeColorIndex];
       changeColorIfNeccessary(elementId);
     }
   }
