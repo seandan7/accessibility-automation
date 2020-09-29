@@ -1,10 +1,13 @@
-var themeColors = ["white", "red", "blue", "black", "cyan", "lightgray"];
+var themeColors = ["rgb(255,255,255)", "rgb(255,255,0)", "rbg(0,0,255)", "rgb(0,0,0)", "rgb(0,255,0", "rgb(100,100,100"];
 
 function changeColorIfNeccessary(elementId) {
+  
   const element = document.getElementById(elementId);
+  const themeColorIndex = themeColors.indexOf(element.style.backgroundColor)
   // read the colors and transform them into rgb format
   const color1 = window.getComputedStyle(element).backgroundColor; // will work
   const color2 = window.getComputedStyle(element).color;
+
   const color1rgb = color1.replace(/[^\d,]/g, "").split(",");
   const color2rgb = color2.replace(/[^\d,]/g, "").split(",");
 
@@ -24,8 +27,11 @@ function changeColorIfNeccessary(elementId) {
       ? (color2luminance + 0.05) / (color1luminance + 0.05)
       : (color1luminance + 0.05) / (color2luminance + 0.05);
 
-  if (ratio > 0.222222) {
-    fixColor(elementId) 
+  if (ratio < 0.222222) {
+    console.log('is good')
+  } else {
+    element.style.backgroundColor = themeColors[themeColorIndex + 1]
+    changeColorIfNeccessary(elementId)
   }
   
 }
