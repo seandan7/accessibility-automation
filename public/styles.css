@@ -1,0 +1,12 @@
+.images {
+    width: 100%;
+  }
+  .images img {
+    display: block;
+    max-width: 300px;
+  }
+
+  .colors #example{
+    background-color: #eeeeee;
+    color: #ffffff
+  }
