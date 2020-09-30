@@ -9,6 +9,7 @@ var themeColors = [
 let timesRan = 0;
 function changeColorIfNeccessary(elementId) {
   timesRan++;
+  // prevents infinite loop bc bug
   if (timesRan > themeColors.length) {
     return;
   } else {
