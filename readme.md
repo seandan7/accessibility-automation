@@ -29,3 +29,5 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
 There will likely be issues I missed or that are specific to your site. If they are broad, or if my code could be improved, feel free to make a PR.
 
 Let's build a more accessibile web so everyone can enjoy the entertainment, information, and connections that we may take for granted. 
+
+Credit: https://dev.to/alvaromontoro/building-your-own-color-contrast-checker-4j7o
