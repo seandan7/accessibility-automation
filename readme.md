@@ -1,5 +1,7 @@
 # Accessibiliy Automation
 
+## Disclaimer: These scripts are purely for informative purposes and should not be used as a workaround for ADA compliance. They do not promise an accessible website.
+
 ## To use
 
 To sample this app, make a config.js within the public directory with the authentication recieved from Imagga.com.
