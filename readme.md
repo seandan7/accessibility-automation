@@ -21,7 +21,7 @@ These repo uses https://imagga.com/ for image recognition (alt-tags.js). This re
 This repo has scripts to make the HTML tags for bold and italicizing purely CSS (font-styles.js). This is recommended by most accessibility checkers, as these tags can clutter if used purely for decoration.
 
 ### aria-labels.js
-Lastly, this repo has code to add aria-labels to buttons that read 'learn more' or 'read more' (aria-labels.js). These links are too broad for Screen Readers to understand where they go.
+This repo has code to add aria-labels to buttons that read 'learn more' or 'read more' (aria-labels.js). These links are too broad for Screen Readers to understand where they go.
 
 ### color-contrast.js
 This repo has code that finds the color contrast for a given div's background and color styles, and changes it based on an array of acceptable values. This will work if a parent element holds both a bg color and a color css property. This one has room for improvement.
