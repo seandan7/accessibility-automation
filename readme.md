@@ -1,5 +1,7 @@
 # Accessibiliy Automation
 
+## Disclaimer: These scripts are purely for informative purposes and should not be used as a workaround for ADA compliance. They do not promise an accessible website.
+
 ## To use
 
 To sample this app, make a config.js within the public directory with the authentication recieved from Imagga.com.
@@ -18,7 +20,7 @@ This repo has scripts to make the HTML tags for bold and italicizing purely CSS 
 
 Lastly, this repo has code to add aria-labels to buttons that read 'learn more' or 'read more' (aria-labels.js). These links are too broad for Screen Readers to understand where they go.
 
-### NOTE:
+## Note
 These scripts are obviously not ideal, as some SR's dont load JS scripts. This is meant as a temporary fix while remediation is being done. It is preferable to first enable accessibility within server side loops and manually where needed. 
 
 There are some edge cases, such as popups, I have not yet covered. Could configure Roles 
