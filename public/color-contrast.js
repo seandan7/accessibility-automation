@@ -38,6 +38,7 @@ function changeColorIfNeccessary(elementId) {
         ? (color2luminance + 0.05) / (color1luminance + 0.05)
         : (color1luminance + 0.05) / (color2luminance + 0.05);
     if (ratio < 0.222222) {
+      console.log('is good')
     } else {
       themeColorIndex++
       element.style.backgroundColor = themeColors[themeColorIndex];
